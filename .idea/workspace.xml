@@ -4,54 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51561380-6958-4107-a677-53060a7366dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/HabitTracker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/celery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+    <list default="true" id="51561380-6958-4107-a677-53060a7366dd" name="Changes" comment="create models: User, Notification, Habit. urls, serializers is ready for this models. create settings">
+      <change afterPath="$PROJECT_DIR$/habits/migrations/0003_alter_habit_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/habits/migrations/0004_habit_reminder_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/habits/paginations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/management/commands/csu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/management/commands/cu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/management/commands/new_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/0002_user_telegram_chat_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habits/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habits/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habits/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habits/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habits/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +50,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -82,8 +71,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/serebriakovanton/PycharmProjects/HabitTracker&quot;
   }
 }</component>
   <component name="SharedIndexes">
@@ -102,9 +93,20 @@
       <option name="presentableId" value="Default" />
       <updated>1724744914668</updated>
     </task>
+    <task id="LOCAL-00001" summary="create models: User, Notification, Habit. urls, serializers is ready for this models. create settings">
+      <option name="closed" value="true" />
+      <created>1724750928503</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724750928503</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="create models: User, Notification, Habit. urls, serializers is ready for this models. create settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="create models: User, Notification, Habit. urls, serializers is ready for this models. create settings" />
   </component>
 </project>
