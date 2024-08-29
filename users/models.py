@@ -40,6 +40,7 @@ class User(AbstractUser):
     is_active = models.BooleanField(
         default=True, verbose_name="is_active status", null=True, blank=True
     )
+    telegram_chat_id = models.CharField(max_length=255, null=True, blank=True)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []

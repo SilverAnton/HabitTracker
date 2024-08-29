@@ -6,5 +6,7 @@ from .views import SendTelegramNotification
 app_name = NotificationsConfig.name
 
 urlpatterns = [
-    path('send/', SendTelegramNotification.as_view(), name='send_telegram_notification'),
+    path(
+        "send/", SendTelegramNotification.as_view(), name="send_telegram_notification"
+    ),
 ]
