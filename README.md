@@ -23,8 +23,8 @@ Setup
 1. Clone the repository:
 
    
-   git clone https://github.com/yourusername/habit-tracker.git
-   cd habit-tracker
+   git clone https://github.com/SilverAnton/HabitTracker.git
+   
    
 
 2. Environment Configuration:
